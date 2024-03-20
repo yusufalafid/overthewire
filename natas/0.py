@@ -10,3 +10,5 @@ for line in response.text.splitlines():
     if str in line:
         l=line.split()
         print(l[5])
+        with open('password.txt', 'w') as f:
+            f.write(l[5])
